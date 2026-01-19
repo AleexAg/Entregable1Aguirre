@@ -8,6 +8,26 @@
 <body>
     <h1>Simulador de reserva de videojuego</h1>
 
+    <div id="login">
+        <h2 id="ingresarPin">Ingresar PIN</h2>
+        <input type="password" id="pinInput" placeholder="Ingrese su PIN">
+        <button id="btnIngresar">Ingresar</button>
+    </div>
+
+
+    <div id="menu" style="display:none;">
+        <button id="btnPrecio">Consultar precio de salida y saldo en cuenta</button>
+        <button id="btnComprar">Realizar compra</button>
+        <button id="btnDeposito">Depositar dinero</button>
+        <button id="btnCatalogo">Ver catálogo</button>
+    </div>
+
+    <div id="deposito" style="display:none;">
+        <input type="number" id="montoDeposito" placeholder="Monto a depositar">
+        <button id="btnConfirmarDeposito">Confirmar depósito</button>
+    </div>
+
+    <div id="resultado"></div>
 
     <script src="main.js"></script>
 </body>
