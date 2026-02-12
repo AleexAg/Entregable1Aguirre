@@ -1,34 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Tienda de Juegos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador - Primer entrega</title>
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
+
 <body>
-    <h1>Simulador de reserva de videojuego</h1>
 
-    <div id="login">
-        <h2 id="ingresarPin">Ingresar PIN</h2>
-        <input type="password" id="pinInput" placeholder="Ingrese su PIN">
-        <button id="btnIngresar">Ingresar</button>
+    <!-- LOGIN / REGISTRO -->
+    <div id="authContainer">
+        <h2>Sistema de login</h2>
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+
+        <div class="auth-buttons">
+            <button id="loginBtn">Iniciar Sesion</button>
+            <button id="registerBtn">Registrarse</button>
+        </div>
     </div>
 
+    <!-- CONTENIDO PRINCIPAL -->
+    <div id="contenido" class="hidden">
 
-    <div id="menu" style="display:none;">
-        <button id="btnPrecio">Consultar precio de salida y saldo en cuenta</button>
-        <button id="btnComprar">Realizar compra</button>
-        <button id="btnDeposito">Depositar dinero</button>
-        <button id="btnCatalogo">Ver catálogo</button>
+        <header>
+            <h1>🎮 Tienda de Juegos</h1>
+            <button id="logoutBtn">Cerrar sesion</button>
+        </header>
+
+        <div id="saldoContainer">
+            <h3>Dinero disponible: $<span id="dineroDisponible">0</span></h3>
+            <button id="cargarSaldoBtn">Cargar Dinero</button>
+        </div>
+
+        <div id="filtroContainer">
+            <label for="filtroCategoria">Filtrar por categoria:</label>
+            <select id="filtroCategoria">
+                <option value="todos">Todos</option>
+            </select>
+        </div>
+
+        <div id="catalogo"></div>
+
+        <section id="carritoSection">
+            <h2>Carrito</h2>
+            <div id="carrito"></div>
+
+            <div id="accionesCarrito">
+                <button id="comprarBtn">Comprar</button>
+            </div>
+        </section>
+
     </div>
 
-    <div id="deposito" style="display:none;">
-        <input type="number" id="montoDeposito" placeholder="Monto a depositar">
-        <button id="btnConfirmarDeposito">Confirmar depósito</button>
-    </div>
+    <!-- Librerías -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
-    <div id="resultado"></div>
+    <!-- JS -->
+    <script src="js/main.js"></script>
 
-    <script src="main.js"></script>
 </body>
 </html>

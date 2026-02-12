@@ -1,0 +1,20 @@
+[
+  { "id": 1, "nombre": "FIFA 24", "categoria": "Deportes", "precio": 60000},
+  { "id": 2, "nombre": "Call of Duty", "categoria": "Acción", "precio": 70000},
+  { "id": 3, "nombre": "Minecraft", "categoria": "Aventura", "precio": 30000},
+  { "id": 4, "nombre": "The Witcher 3", "categoria": "RPG", "precio": 50000},
+  { "id": 5, "nombre": "GTA V", "categoria": "Acción", "precio": 40000},
+  { "id": 6, "nombre": "NBA 2K24", "categoria": "Deportes", "precio": 60005},
+  { "id": 7, "nombre": "Fortnite", "categoria": "Battle Royale", "precio": 89900},
+  { "id": 8, "nombre": "Red Dead Redemption 2", "categoria": "Aventura", "precio": 55776},
+  { "id": 9, "nombre": "Elden Ring", "categoria": "RPG", "precio": 64450},
+  { "id": 10, "nombre": "Valorant", "categoria": "Shooter", "precio": 80090},
+  { "id": 11, "nombre": "Resident Evil 4", "categoria": "Terror", "precio": 59900},
+  { "id": 12, "nombre": "God of War", "categoria": "Acción", "precio": 68890},
+  { "id": 13, "nombre": "Hollow Knight", "categoria": "Indie", "precio": 28800},
+  { "id": 14, "nombre": "Cyberpunk 2077", "categoria": "RPG", "precio": 48685},
+  { "id": 15, "nombre": "Rocket League", "categoria": "Deportes", "precio": 67970},
+  { "id": 16, "nombre": "Assassin's Creed", "categoria": "Aventura", "precio": 57960},
+  { "id": 17, "nombre": "The Last of Us", "categoria": "Drama", "precio": 60675},
+  { "id": 18, "nombre": "Overwatch", "categoria": "Shooter", "precio": 38565}
+]
